@@ -1,0 +1,37 @@
+{
+  "name": "sdl-translate-server",
+  "version": "0.0.6",
+  "description": "Server for text translations using SDL Language Cloud. Translations are stored in a database for future usage to save costs.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-formidable": "^1.2.0",
+    "sdl-translate": "^0.0.6",
+    "node-promise-wrapper": "^0.0.2",
+    "pouchdb": "^7.0.0",
+    "pouchdb-find": "^7.0.0",
+    "randomstring": "^1.1.5",
+    "node-file-config": "^0.0.8",
+    "dbpouch": "^0.1.8"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/animatedcreativity/sdl-translate-server"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "sdl",
+    "translate",
+    "language",
+    "cloud",
+    "translations",
+    "texts",
+    "server"
+  ]
+}

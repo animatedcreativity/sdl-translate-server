@@ -1,0 +1,7 @@
+.glitch-assets
+shrinkwrap.yaml
+database*
+sdl-translate*
+translations*
+package-lock*
+node_modules*
