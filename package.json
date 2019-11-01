@@ -1,6 +1,6 @@
 {
   "name": "sdl-translate-server",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Server for text translations using SDL Language Cloud. Translations are stored in a database for future usage to save costs.",
   "main": "main.js",
   "scripts": {
