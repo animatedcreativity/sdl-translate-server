@@ -13,6 +13,7 @@ For commercial use, please contact SDL itself.
 exports = module.exports = function() {
   return {
     authorization: "<your_server_authorization_key>", // Lowercase
+    expressHost: "127.0.0.1",
     expressPort: 3000,
     database: "database/translations",
     endpoint: "/translate",
