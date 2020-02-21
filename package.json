@@ -1,21 +1,21 @@
 {
   "name": "sdl-translate-server",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Server for text translations using SDL Language Cloud. Translations are stored in a database for future usage to save costs.",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
   "dependencies": {
-    "dbpouch": "^0.1.8",
     "express": "^4.16.4",
     "express-formidable": "^1.2.0",
-    "node-file-config": "^0.0.8",
+    "sdl-translate": "^0.1.8",
     "node-promise-wrapper": "^0.0.2",
     "pouchdb": "^7.0.0",
     "pouchdb-find": "^7.0.0",
     "randomstring": "^1.1.5",
-    "sdl-translate": "^0.1.7"
+    "node-file-config": "^0.0.8",
+    "dbpouch": "^0.1.8"
   },
   "engines": {
     "node": "8.x"
