@@ -52,13 +52,15 @@ exports = module.exports = function(userConfig) {
         var from = request.fields.from.trim().toLowerCase();
         var to = request.fields.to.trim().toLowerCase();
         var _db = config.cdn.use !== true ? app.db : db;
-        console.log(text, from , to);
+        console.log(text, from, to);
         var {result} = await app.wrapper("result", _db.record({text: text, from: from, to: to}, config.database));
         if (typeof result !== "undefined") {
+          console.log(result.translation);
           response.send(JSON.stringify({status: app.status.success, message: result.translation}));
         } else {
           var {translation} = await app.wrapper("translation", sdl.translate(text, from, to));
           if (typeof translation !== "undefined") {
+            console.log(translation);
             var {error, result} = await app.wrapper("result", _db.save({text: text, from: from, to: to, translation: translation, time: new Date().getTime()}, config.database));
             if (typeof result !== "undefined") {
               response.send(JSON.stringify({status: app.status.success, message: translation}));
